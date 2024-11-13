@@ -1,21 +1,25 @@
 {
-  "name": "readmind-api",
-  "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify"
-  },
-  "dependencies": {
-    "@prisma/client": "^5.22.0",
-    "hono": "^4.6.9"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@cloudflare/workers-types": "^4.20241022.0",
-    "@types/node": "^22.9.0",
-    "prisma": "^5.22.0",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.4",
-    "wrangler": "^3.83.0"
-  }
+	"name": "readmind-api",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"test": "vitest",
+		"format": "biome format --write .",
+		"lint": "biome lint --write .",
+		"check": "biome check --write ."
+	},
+	"dependencies": {
+		"@prisma/client": "^5.22.0",
+		"hono": "^4.6.9"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@cloudflare/workers-types": "^4.20241022.0",
+		"@types/node": "^22.9.0",
+		"prisma": "^5.22.0",
+		"tsx": "^4.19.2",
+		"typescript": "^5.6.3",
+		"vitest": "^2.1.4",
+		"wrangler": "^3.83.0"
+	}
 }
